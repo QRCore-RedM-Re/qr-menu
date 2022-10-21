@@ -21,7 +21,7 @@
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #171717e6;
+    background: #1f2331f2;
     border-radius: 10px;
 }
 
@@ -62,8 +62,9 @@ body {
 .button {
     width: auto;
     height: 10%;
-    background: rgba(23, 23, 23, 90%);
-    color: white;
+	background-color: #161923f2;
+	color: rgb(239, 228, 205);
+    text-shadow:2px 2px 4px #000000;
     margin: auto;
     position: relative;
     top: 10%;
@@ -85,14 +86,15 @@ body {
 }
 
 .button:hover {
-    background-color: #dc143c;
+    background-color: #a90d2ca6;
 }
 
 .title {
     width: auto;
     height: 10%;
     background: rgba(23, 23, 23, 90%);
-    color: white;
+	color: rgb(239, 228, 205);
+    text-shadow:2px 2px 4px #000000;
     margin: auto;
     position: relative;
     top: 10%;
@@ -128,7 +130,8 @@ div > .header {
     position: relative;
     justify-content: left;
     overflow: wrap;
-    color: white;
+	color: rgb(239, 228, 205);
+    text-shadow:2px 2px 4px #000000;
     font-size: 0.9rem;
     font-weight: 400;
     overflow: hidden;
