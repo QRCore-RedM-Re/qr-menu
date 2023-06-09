@@ -9,11 +9,10 @@ local function openMenu(data)
 	for _,v in pairs(data) do
 		if v["icon"] then
 			local img = "qr-inventory/html/"
-			if QRCore.Shared.Items[tostring(v["icon"])] then
-				if not string.find(QRCore.Shared.Items[tostring(v["icon"])].image, "images/") then
+			if QRCore.Shared.GetItems(v.icon) then
+				if not QRCore.Shared.GetItems(v.icon).image then
 					img = img.."images/"
 				end
-				v["icon"] = img..QRCore.Shared.Items[tostring(v["icon"])].image
 			end
 		end
 	end
